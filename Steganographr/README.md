@@ -2,7 +2,7 @@
 Uses the API provided by [neatnik](https://neatnik.net/steganographr/)
 
 ## Usage
-```python
+```
 ./steganographr "public message" "a secret message"
 ```
 
