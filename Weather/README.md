@@ -29,6 +29,16 @@ def get_city_id(city:str, state:str):
 Enter a city name and two letter state code as arguments\
 ```./weather.py "savannah" "ga"```
 
+The current output is a rather dull f-string
+```bash
+                 SAVANNAH
+It is currently broken clouds and 87.82° but it feels like 89.11°
+The humidity is 66%
+The min/max temps today are 86° and 89.6°
+The cloud cover is currently 75%
+Sunset is at 07:34 PM
+```
+
 Note that while there are millions of city codes, if you live in a particularly\
 small town you may have to use a city near by.
 
