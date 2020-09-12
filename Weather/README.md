@@ -2,7 +2,9 @@
 get a free one [here](https://openweathermap.org/price)\
 It may take a few hours for your Key to be active.
 
-Once it is insert it in the 'url' assignment
+
+## Setup
+Once your key is active insert it in the 'url' assignment
 ```
 def get_weather(city_id):
     if not city_id:
@@ -14,6 +16,13 @@ def get_weather(city_id):
     response = requests.get(url).text
     info = json.loads(response)
 ```
+
+Replace "city_list.json" with the full path to the city_list.json file\
+```
+def get_city_id(city:str, state:str):
+    with open("city_list.json", "r") as f:
+```
+
 ## Usage
 Enter a city name and two letter state code as arguments\
 `./weather.py "savannah" "ga"`
