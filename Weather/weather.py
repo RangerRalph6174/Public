@@ -13,7 +13,7 @@ def get_city_id(city:str, state:str):
 def get_weather(city_id):
     if not city_id:
         return (f"That city name was not found\n"
-                f"Pleas try again and enter another city near by"
+                f"Please try again and enter another city near by"
         )
 
     url = f"http://api.openweathermap.org/data/2.5/weather?id={city_id}&units=imperial&APPID=<ENTER YOUR API KEY HERE>"
