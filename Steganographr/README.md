@@ -2,13 +2,23 @@
 Uses the API provided by [neatnik](https://neatnik.net/steganographr/)
 
 ## Usage
+To hide a secret message inside a public message\
+The public message will be copied to your clipboard.
 ```
-./steganographr "public message" "a secret message"
+./steganographr -p "A public message" -s "A secret message"
 ```
 
-The public message will be copied to your clipboard.\
-To reveal the secret message within, paste the public message into the link above.
+To hide the default secret message inside a public message\
+The public message will be copied to your clipboard.
+```
+./steganographr -p "A public message"
+```
 
-If no secret message is provided, the default will be "Hello, World"
-#### Example
-`./steganographr "public message"`
+To reveal the secret message.
+for best results type (-p "") and then move cursor between the quotes and paste the secret message.
+```
+./steganographr -d -p "A public message"
+```
+
+You can also reveal the secret message by pasting the public message into the link above.
+
